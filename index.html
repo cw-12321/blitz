@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="1학년 새내기 개발자의 디스코드 테마 개인 포트폴리오 웹사이트입니다.">
+  <title>KIM FRESHMAN | 1st Year Dev Portfolio</title>
+  
+  <!-- CSS 연결 -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- 구글 폰트: Space Grotesk(디스플레이 헤드라인), Plus Jakarta Sans(영문 본문), Noto Sans KR(한글 본문) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 웹 접근성을 위한 본문 건너뛰기 링크 -->
+  <a href="#main-content" class="skip-link">본문 바로가기</a>
+
+  <!-- 헤더 영역: 딥 인디고 & Blurple 그라디언트 메시 배경 -->
+  <header class="header">
+    <nav class="nav-bar" aria-label="메인 내비게이션">
+      <div class="nav-container">
+        <a href="#home" class="logo" aria-label="홈으로 이동">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07f 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+          </svg>
+          <span>DEV.DISCORD</span>
+        </a>
+
+        <!-- 지시사항 메뉴: ABOUT, PROJECTS, CONTACT -->
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-green btn-nav">JOIN THE PARTY</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <div id="home" class="hero">
+      <div class="container hero-container">
+        <div class="badge hero-badge">★ LEVEL 1 DEVELOPER · 1ST YEAR CS</div>
+        <h1 class="hero-title">
+          IMAGINE A PLACE...<br>
+          WHERE CODE SPARKS REAL PLAY!
+        </h1>
+        <p class="hero-desc">
+          안녕하세요! 배움의 설렘을 코드로 빚어내는 1학년 개발자 김새내입니다.<br>
+          컴퓨터공학의 기초를 다지며, 사용자에게 게임처럼 즐거운 인터랙션을 선사하는 웹 세상을 만듭니다.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-green">EXPLORE PROJECTS</a>
+          <a href="#contact" class="btn btn-ghost">CHAT WITH ME</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 마퀴 밴드 (Discord 특유의 풀블리드 액션 바) -->
+  <aside class="marquee-band" aria-label="키워드 슬라이드 밴드">
+    <div class="marquee-content">
+      <span>PLAY</span> • <span>CODE</span> • <span>LEARN</span> • <span>COLLABORATE</span> • <span>DISCORD VIBES</span> • <span>FRESHMAN DEV</span> • <span>BUILD SOMETHING AWESOME</span> • 
+      <span>PLAY</span> • <span>CODE</span> • <span>LEARN</span> • <span>COLLABORATE</span> • <span>DISCORD VIBES</span> • <span>FRESHMAN DEV</span> • <span>BUILD SOMETHING AWESOME</span>
+    </div>
+  </aside>
+
+  <!-- 메인 콘텐츠 영역 -->
+  <main id="main-content">
+    <!-- ABOUT 섹션 -->
+    <section id="about" class="section about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge badge-magenta">PLAYER STATS</span>
+          <h2 id="about-heading" class="section-title">ABOUT ME</h2>
+          <p class="section-desc">호기심 많은 모험가, 26학번 컴퓨터공학과 1학년의 능력치와 퀘스트 로그입니다.</p>
+        </header>
+
+        <div class="about-grid">
+          <!-- 좌측: 프로필 카드 -->
+          <div class="feature-card-dark profile-card">
+            <div class="avatar-wrapper">
+              <div class="profile-avatar" aria-hidden="true">👾</div>
+              <span class="online-indicator" title="현재 코딩 중 (Online)"></span>
+            </div>
+            <h3 class="profile-name">김새내 (Kim Freshman)</h3>
+            <p class="profile-tag">@freshman_dev#2026</p>
+            <div class="profile-status">
+              <span class="status-dot"></span> "새로운 알고리즘 격파 중! ⚔️"
+            </div>
+
+            <div class="profile-stats-grid">
+              <div class="stat-card">
+                <span class="stat-num">LV.1</span>
+                <span class="stat-label">FRESHMAN</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">3+</span>
+                <span class="stat-label">PROJECTS</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">PASSION</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 우측: 개발 여정 및 기술 스택 -->
+          <div class="feature-card-gradient journey-card">
+            <h3 class="journey-title">WELCOME TO MY SERVER!</h3>
+            <p class="journey-text">
+              첫 코딩 수업에서 화면에 "Hello, World!"를 띄웠던 그 짜릿한 전율을 아직도 잊지 못합니다.
+              C언어로 컴퓨터의 깊은 논리를 배우고, HTML/CSS로 세상과 소통하는 창을 만들어가고 있습니다.
+            </p>
+            <p class="journey-text">
+              게임처럼 즐거운 웹 인터페이스, 모두가 소외되지 않는 웹 접근성, 그리고 견고한 시맨틱 마크업을
+              항상 기본 원칙으로 삼고 실천합니다.
+            </p>
+
+            <div class="skills-box">
+              <h4 class="skills-heading">SKILL INVENTORY</h4>
+              <div class="skill-tags">
+                <span class="tag tag-blurple">HTML5 Semantic</span>
+                <span class="tag tag-blurple">Responsive CSS3</span>
+                <span class="tag tag-magenta">Discord Design System</span>
+                <span class="tag tag-cyan">JavaScript Basics</span>
+                <span class="tag tag-cyan">C / C++ Basics</span>
+                <span class="tag tag-white">Git &amp; GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS 섹션 -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge badge-magenta">FEATURED QUESTS</span>
+          <h2 id="projects-heading" class="section-title">PROJECTS</h2>
+          <p class="section-desc">1학년 동안 직접 땀흘려 완성한 흥미진진한 개발 퀘스트들입니다.</p>
+        </header>
+
+        <div class="projects-grid">
+          <!-- 프로젝트 1: 포트폴리오 웹사이트 -->
+          <article class="feature-card-dark project-card">
+            <div class="project-banner banner-blurple">
+              <span class="project-icon">🎮</span>
+              <span class="project-tier-badge">MAIN QUEST</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">WEB FRONTEND</span>
+                <span class="badge badge-magenta">v1.0</span>
+              </div>
+              <h3 class="project-title">DISCORD VIBE PORTFOLIO</h3>
+              <p class="project-desc">
+                디스코드 공식 디자인 시스템의 딥 인디고 캔버스, 블러플(#5865f2), 일렉트릭 그린 CTA를 완벽히 녹여낸 반응형 개인 포트폴리오 웹사이트입니다.
+              </p>
+              <div class="project-tech-stack">
+                <span>HTML5 Semantic</span>
+                <span>Responsive CSS</span>
+                <span>Flexbox &amp; Grid</span>
+              </div>
+              <div class="project-actions">
+                <a href="#home" class="btn btn-green btn-sm">VIEW DEMO</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">SOURCE CODE</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 프로젝트 2: C언어 텍스트 RPG -->
+          <article class="feature-card-dark project-card">
+            <div class="project-banner banner-magenta">
+              <span class="project-icon">⚔️</span>
+              <span class="project-tier-badge">CLASS PROJECT</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">CONSOLE GAME</span>
+                <span class="badge badge-blurple">C LANG</span>
+              </div>
+              <h3 class="project-title">CONSOLE DUNGEON CRAWLER</h3>
+              <p class="project-desc">
+                1학년 1학기 프로그래밍 기초 최종 과제작! 구조체와 동적 메모리, 파일 입출력을 활용해 플레이어 데이터 세이브와 몬스터 턴제 전투를 구현했습니다.
+              </p>
+              <div class="project-tech-stack">
+                <span>C Language</span>
+                <span>Pointers &amp; Struct</span>
+                <span>File I/O</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">GITHUB REPO</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 프로젝트 3: 알고리즘 스터디 아카이브 -->
+          <article class="feature-card-dark project-card">
+            <div class="project-banner banner-cyan">
+              <span class="project-icon">🏆</span>
+              <span class="project-tier-badge">DAILY QUEST</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">ALGORITHM STUDY</span>
+                <span class="badge badge-magenta">STREAK</span>
+              </div>
+              <h3 class="project-title">1-DAY 1-PROBLEM LOG</h3>
+              <p class="project-desc">
+                백준과 프로그래머스 기초 알고리즘 문제를 해결하고, 시간 복잡도 분석과 디버깅 과정을 깔끔하게 정리해 나가는 개발자 성장 아카이브입니다.
+              </p>
+              <div class="project-tech-stack">
+                <span>Data Structure</span>
+                <span>Algorithms</span>
+                <span>Problem Solving</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">VIEW ARCHIVE</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 디스코드 스타일 풀블리드 CTA 밴드 -->
+    <section class="cta-band" aria-label="협업 제안 배너">
+      <div class="container cta-container">
+        <h2 class="cta-title">READY TO START YOUR NEXT ADVENTURE?</h2>
+        <p class="cta-desc">함께 재미있는 프로젝트를 만들거나, 커피챗을 나누고 싶은 모든 분들을 환영합니다!</p>
+        <div class="cta-btn-group">
+          <a href="#contact" class="btn btn-green">CONNECT ON DISCORD</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT 섹션 -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge badge-magenta">DIRECT MESSAGE</span>
+          <h2 id="contact-heading" class="section-title">CONTACT</h2>
+          <p class="section-desc">새로운 협업, 스터디 제안, 멘토링 조언 언제든 DM을 보내주세요!</p>
+        </header>
+
+        <div class="contact-grid">
+          <!-- 좌측: 채널 정보 -->
+          <div class="feature-card-dark contact-info-card">
+            <h3 class="contact-info-title">CHANNELS &amp; CONTACT</h3>
+            <p class="contact-info-subtitle">언제나 열려있는 1학년 개발자의 개인 채널 목록입니다.</p>
+
+            <div class="contact-channels">
+              <div class="channel-item">
+                <span class="channel-hash">#</span>
+                <div class="channel-detail">
+                  <span class="channel-name">email-inbox</span>
+                  <a href="mailto:freshman.dev@example.com" class="channel-link">freshman.dev@example.com</a>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <span class="channel-hash">#</span>
+                <div class="channel-detail">
+                  <span class="channel-name">github-code-vault</span>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="channel-link">github.com/freshman-dev</a>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <span class="channel-hash">#</span>
+                <div class="channel-detail">
+                  <span class="channel-name">server-location</span>
+                  <span class="channel-link">Seoul, Republic of Korea</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 우측: DM 보내기 폼 -->
+          <div class="feature-card-dark contact-form-card">
+            <h3 class="form-title">SEND A DIRECT MESSAGE</h3>
+            <form class="discord-form" action="#" method="post" onsubmit="event.preventDefault(); alert('🚀 DM 전송 완료! 빠르게 확인 후 답장 드리겠습니다.');">
+              <div class="form-group">
+                <label for="user-name">USERNAME / NAME <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="user-name" name="name" required placeholder="예: CoolDeveloper#1234" aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="user-email">EMAIL ADDRESS <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="user-email" name="email" required placeholder="yourname@discord.com" aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="user-msg">MESSAGE <span class="required" aria-hidden="true">*</span></label>
+                <textarea id="user-msg" name="message" rows="4" required placeholder="프로젝트 제안이나 응원의 한마디를 남겨주세요!" aria-required="true"></textarea>
+              </div>
+              <button type="submit" class="btn btn-green btn-block">SEND MESSAGE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터: 대형 워드마크 & 딥 인디고 캔버스 -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-wordmark">DEV.FRESHMAN</span>
+          <p class="footer-slogan">Crafted with pure HTML &amp; CSS with Discord Design System.</p>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kim Freshman. Built for AI &amp; Practice Week 3.</p>
+        <p class="footer-badge-text">Powered by Discord Design Language</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
